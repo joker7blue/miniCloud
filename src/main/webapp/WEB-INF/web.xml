@@ -4,4 +4,38 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>MusiqueHandleServlet</servlet-name>
+  	<servlet-class>com.ggmm.servlets.MusiqueHandleServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>VideoHandleServlet</servlet-name>
+  	<servlet-class>com.ggmm.servlets.VideoHandleServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DocumentHandleServlet</servlet-name>
+  	<servlet-class>com.ggmm.servlets.DocumentHandleServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>PictureHandleServlet</servlet-name>
+  	<servlet-class>com.ggmm.servlets.PictureHandleServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>MusiqueHandleServlet</servlet-name>
+  	<url-pattern>/musiques</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>VideoHandleServlet</servlet-name>
+  	<url-pattern>/videos</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DocumentHandleServlet</servlet-name>
+  	<url-pattern>/documents</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>PictureHandleServlet</servlet-name>
+  	<url-pattern>/pictures</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

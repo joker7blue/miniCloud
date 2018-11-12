@@ -14,10 +14,35 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+
+<dependency>
+	<groupId>javax.servlet</groupId>
+	<artifactId>servlet-api</artifactId>
+	<version>2.5</version>
+	<scope>provided</scope>
+</dependency>
   </dependencies>
   <build>
     <finalName>ggmm</finalName>
     <plugins>
+
+<plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.0.0</version>
+        <configuration>
+          <warSourceDirectory>target</warSourceDirectory>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.7.0</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+
       <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-dependency-plugin</artifactId>
@@ -39,6 +64,12 @@
                 </execution>
             </executions>
         </plugin>
+
+<plugin>
+        <groupId>com.heroku.sdk</groupId>
+        <artifactId>heroku-maven-plugin</artifactId>
+        <version>2.0.6</version>
+      </plugin>
     </plugins>
   </build>
 </project>

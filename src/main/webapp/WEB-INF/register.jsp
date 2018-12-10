@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>GGMM-CLOUD s'enregistrer</title>
+<link rel="icon" href="images/logo.png">
 <%@ include file="/basics_include/include_basics_css.jsp" %> 
 </head>
 <body style="background-color: #f6f6f6;">

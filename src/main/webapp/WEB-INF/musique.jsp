@@ -3,6 +3,7 @@
 <head>
 <title>GGMM - Musics</title>
 <%@ include file="/basics_include/include_basics_css.jsp" %> 
+<link rel="icon" href="images/logo.png">
 </head>
 <body>
 <%@ include file="partials/_nav.jsp" %> 

@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>GGMM - Documents</title>
+<link rel="icon" href="images/logo.png">
 <%@ include file="/basics_include/include_basics_css.jsp" %> 
 </head>
 <body>

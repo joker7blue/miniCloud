@@ -3,6 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Ajouter une photo</title>
+<link rel="icon" href="images/logo.png">
 <%@ include file="/basics_include/include_basics_css.jsp" %> 
 </head>
 <body>

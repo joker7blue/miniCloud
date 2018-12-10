@@ -1,8 +1,8 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
 
-<web-app>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+	
+
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
   	<servlet-name>MusiqueHandleServlet</servlet-name>
@@ -19,6 +19,56 @@
   <servlet>
   	<servlet-name>PictureHandleServlet</servlet-name>
   	<servlet-class>com.ggmm.servlets.PictureHandleServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LoginHandleServlet</servlet-name>
+  	<servlet-class>com.ggmm.servlets.LoginHandleServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RegisterHandleServlet</servlet-name>
+  	<servlet-class>com.ggmm.servlets.RegisterHandleServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>homeUserHandleServlet</servlet-name>
+  	<servlet-class>com.ggmm.servlets.homeUserHandleServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>WelcomeHandleServlet</servlet-name>
+  	<servlet-class>com.ggmm.servlets.WelcomeHandleServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>addDocumentServlet</servlet-name>
+  	<servlet-class>com.ggmm.servlets.addDocumentServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>addMusique</servlet-name>
+  	<servlet-class>com.ggmm.servlets.addMusique</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>addVideo</servlet-name>
+  	<servlet-class>com.ggmm.servlets.addVideo</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>addPicture</servlet-name>
+  	<servlet-class>com.ggmm.servlets.addPicture</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Musiques</servlet-name>
+  	<servlet-class>com.ggmm.beans.Musiques</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Pictures</servlet-name>
+  	<servlet-class>com.ggmm.beans.Pictures</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Documents</servlet-name>
+  	<servlet-class>com.ggmm.beans.Documents</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<servlet-name>LogoutHandleServlet</servlet-name>
+  	<servlet-class>com.ggmm.servlets.LogoutHandleServlet</servlet-class>
   </servlet>
   
   <servlet-mapping>
@@ -37,5 +87,47 @@
   	<servlet-name>PictureHandleServlet</servlet-name>
   	<url-pattern>/pictures</url-pattern>
   </servlet-mapping>
-  
+  <servlet-mapping>
+  	<servlet-name>LoginHandleServlet</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RegisterHandleServlet</servlet-name>
+  	<url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>homeUserHandleServlet</servlet-name>
+  	<url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WelcomeHandleServlet</servlet-name>
+  	<url-pattern>/WelcomeHandleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>addDocumentServlet</servlet-name>
+  	<url-pattern>/addDocument</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>addMusique</servlet-name>
+  	<url-pattern>/addMusique</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>addVideo</servlet-name>
+  	<url-pattern>/addVideo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>addPicture</servlet-name>
+  	<url-pattern>/addPicture</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LogoutHandleServlet</servlet-name>
+  	<url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+	
+	<jsp-config>
+    <jsp-property-group>
+      <url-pattern>*.jsp</url-pattern>
+      <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+    </jsp-property-group>
+  </jsp-config>
 </web-app>

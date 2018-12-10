@@ -26,7 +26,7 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="/ggmm" class="page-scroll">Accueil</a></li>
+          <li><a href="/" class="page-scroll">Accueil</a></li>
           <li><a href="login" class="">Login</a></li>
           <li><a href="register" class="">Register</a></li>
           <li><a href="#videos-section" class="page-scroll">Videos</a></li>

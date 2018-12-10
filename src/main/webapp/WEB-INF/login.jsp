@@ -9,7 +9,7 @@
 <body style="background-color: #f6f6f6;">
 	
 	<nav>
-		<a class="navbar-brand" href="/ggmm"> <img alt="" src="images/logo.png" height="200"> </a>
+		<a class="navbar-brand" href="/"> <img alt="" src="images/logo.png" height="200"> </a>
 	</nav>
 	
 	<div class="container">

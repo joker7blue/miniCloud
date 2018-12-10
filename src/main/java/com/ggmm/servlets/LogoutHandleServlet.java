@@ -31,7 +31,7 @@ public class LogoutHandleServlet extends HttpServlet {
 		session.removeAttribute("currentUser");
 		session.invalidate();
 		
-		response.sendRedirect("/ggmm");
+		response.sendRedirect("/");
 	}
 
 	/**

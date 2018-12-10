@@ -32,6 +32,8 @@
           <li><a href="#videos-section" class="page-scroll">Videos</a></li>
           <li><a href="#sons-section" class="page-scroll">Sons</a></li>
           <li><a href="#contact" class="page-scroll">Contact</a></li>
+          
+          <li><a class="btn btn-default" href="home">Go home <span class="sr-only">(current)</span></a></li>
         </ul>
       </div>
       <!-- /.navbar-collapse --> 

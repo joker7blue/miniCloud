@@ -51,15 +51,23 @@ public class RegisterHandleServlet extends HttpServlet {
 		String login = request.getParameter("login");
 		String password = request.getParameter("password");
 		
-		Users userToStore = new Users();
-		userToStore.setNom(nom);
-		userToStore.setLogin(login);
-		userToStore.setEmail(email);
-		userToStore.setPassWord(password);
+		if( nom.trim().equals("") || email.trim().equals("") || login.trim().equals("") || password.trim().equals("") ) {
+			
+			response.sendRedirect("register");
+		}else {
+			
+			Users userToStore = new Users();
+			userToStore.setNom(nom);
+			userToStore.setLogin(login);
+			userToStore.setEmail(email);
+			userToStore.setPassWord(password);
+			
+			userDao.addUser(userToStore);
+			
+			response.sendRedirect("login");
+			
+		}	
 		
-		userDao.addUser(userToStore);
-		
-		response.sendRedirect("login");
 	}
 
 }
